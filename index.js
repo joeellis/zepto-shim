@@ -1,6 +1,6 @@
 /* Zepto v1.1.4-7-g1d94d92 - zepto event data ajax form ie stack deferred - zeptojs.com/license */
 
-var Zepto = (function() {
+var Zepto = module.exports = (function() {
   var undefined, key, $, classList, emptyArray = [], slice = emptyArray.slice, filter = emptyArray.filter,
     document = window.document,
     elementDisplay = {}, classCache = {},
@@ -878,9 +878,6 @@ var Zepto = (function() {
 
   return $
 })()
-
-window.Zepto = Zepto
-window.$ === undefined && (window.$ = Zepto)
 
 ;(function($){
   var _zid = 1, undefined,
